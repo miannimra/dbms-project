@@ -1,0 +1,98 @@
+h1 {
+    font-size: large;
+}
+.main-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-form {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.main-form1 {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media (max-width: 1400px) {
+  .main-container {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-form {
+    width: 267px;
+    height: 157px;
+    margin-top: 0.25em;
+    align-items: center;
+    margin-right: 1em;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .main-heading {
+    text-align: center;
+    margin-right: 1em;
+    size: 2em;
+  }
+  .main-textinput {
+    margin-top: 0.25em;
+    margin-right: 1em;
+  }
+  .main-textinput1 {
+    margin-top: 0.25em;
+    margin-right: 1em;
+  }
+  .main-textinput2 {
+    margin-top: 0.25em;
+    margin-right: 1em;
+  }
+  .main-textinput3 {
+    margin-top: 0.25em;
+    margin-right: 1em;
+  }
+  .main-button {
+    align-self: flex-end;
+    margin-top: 0.25em;
+    margin-right: 1em;
+  }
+  .main-form1 {
+    width: 267px;
+    height: 157px;
+    margin-top: 0.25em;
+    align-items: center;
+    margin-left: 1em;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .main-text {
+    font-size: medium;
+    text-align: center;
+  }
+  .main-textinput4 {
+    margin-top: 0.25em;
+  }
+  .main-textinput5 {
+    margin-top: 0.25em;
+  }
+  .main-textinput6 {
+    margin-top: 0.25em;
+  }
+  .main-textinput7 {
+    margin-top: 0.25em;
+  }
+  .main-button1 {
+    align-self: flex-end;
+    margin-top: 0.25em;
+  }
+}
+

@@ -1,0 +1,76 @@
+<?php
+session_start();
+if (isset($_SESSION['loginID'])) {
+} else {
+    header("Location: main.php");
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Library Manager</title>
+   
+</head>
+
+<body class="bg-light">
+
+    <div class="container">
+        <div class="py-5 text-center"><h2>Library Manager</h2></div>
+        <fieldset>
+            <form name="bookform" class="needs-validation " method="post" action="main.php">
+                <p>
+                        <label for="ISBN">ISBN </label>
+                        <input type="text" class="form-control" name="bookid" id="bookid" placeholder="ISBN" value="" required>
+                    <div class="invalid-feedback">
+                        Valid ISBN number is required.
+                    </div>
+                </p>
+                <p>
+                    <label for="Title">Title</label>
+                    <input type="text" class="form-control" name="title" id="title" placeholder="Title" value="" required>
+                </p>
+                <p>
+                    <label for="author">Author</label>
+                    <input type="text" class="form-control" name="author" id="author" placeholder="Author" value="" required>
+                </p>
+                <p>
+                    <label for="genre">Genre</label>
+                    <input type="text"  class="form-control" name="genre" id="genre" placeholder="Genre" value="" required>
+                </p>
+                <p>&nbsp;</p>
+                <p>
+                    <input type="submit" name="Submit" id="Submit" value="Submit" class="btn btn-primary btn-lg btn-block">
+                </p>
+            </form>
+            <form name="readerform" class="needs-validation " method="post" action="main.php">
+                <p>
+                        <label for="readerid">Reader ID </label>
+                        <input type="text" class="form-control" name="readerid" id="readerid" placeholder="Reader ID" value="" required>
+                    <div class="invalid-feedback">
+                        Valid ID number is required.
+                    </div>
+                </p>
+                <p>
+                    <label for="first">First Name</label>
+                    <input type="text" class="form-control" name="first" id="first" placeholder="First Name" value="" required>
+                </p>
+                <p>
+                    <label for="last">Last Name</label>
+                    <input type="text" class="form-control" name="last" id="last" placeholder="Last Name" value="" required>
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="text"  class="form-control" name="email" id="email" placeholder="email" value="" required>
+                </p>
+                <p>&nbsp;</p>
+                <p>
+                    <input type="submit" name="Submit" id="Submit" value="Submit" class="btn btn-primary btn-lg btn-block">
+                </p>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
